@@ -1,0 +1,137 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JQuery Mobile Two-One-Colum Responsive Template</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script src="js/jquery-1.7.2.min.js"></script>
+<!-- The following 3 scripts are jquery ui master version which fixes a bug with sliding left and percentage (http://bugs.jqueryui.com/ticket/5245)
+which wasn't fixed in 1.8 as of now -->
+<script type="application/javascript" src="js/jquery.ui.core.js"></script>
+<script type="application/javascript" src="js/jquery.ui.effect.js"></script>
+<script type="application/javascript" src="js/jquery.ui.effect-slide.js"></script>
+<!-- END JQueryUI Master Scripts -->
+<script type="application/javascript" src="js/jqm-defaults.js"></script>
+<script type="application/javascript" src="js/jquery.mobile-1.2.0-alpha.1.min.js"></script>
+<script type="application/javascript" src="js/template.js"></script>
+</head>
+<body>
+
+<!------------------------------------- PAGE #1 ------------------------------------>
+<div data-role="page" id="firstpage">
+  <div data-role="header" data-theme="a">
+    <h1>First Page</h1>
+    <a id="togglemenu" data-icon="grid" data-iconpos="left" >Menu</a> <a href="#about" data-icon="info" data-iconpos="notext">About</a>
+    <div class="content-secondary">
+      <ul data-role="listview" data-theme="c" data-dividertheme="d">
+        <li data-theme="a">First Page</li>
+        <li><a href="#secondpage">Second Page</a></li>
+        <li><a href="#about" >About</a></li>
+      </ul>
+    </div>
+  </div> <!-- /header -->
+  
+  <div data-role="popup" id="popupBasic">
+    <p>This is a completely basic popup, no options set.
+    <p> 
+  </div>
+  <div data-role="content">
+    <div class="content-primary">
+      <p>This is the first page example text. It need to be a bit longer to wrap around to see the actual responsive text wraping and scaling.</p>
+    </div><!--/content-primary --> 
+  </div><!-- /content -->
+  
+  <div data-role="footer" class="footer-docs" data-theme="c" data-position="fixed">
+    <p>Template Footer</p>
+  </div>
+</div><!-- /page --> 
+<!------------------------------------- PAGE #2 ------------------------------------>
+<div data-role="page" id="secondpage">
+  <div data-role="header" data-theme="a">
+    <h1>Second Page</h1>
+    <a id="togglemenu" data-icon="grid" data-iconpos="left" data-direction="reverse">Menu</a> <a href="#about" data-icon="info" data-iconpos="notext">About</a>
+    <div class="content-secondary">
+      <ul data-role="listview" data-theme="c" data-dividertheme="d">
+        <li><a href="#firstpage">First Page</a></li>
+        <li data-theme="a">Second Page</li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </div><!-- /header -->
+  
+  <div data-role="content">
+    <div class="content-primary">
+      <p>This is the second page example text. It need to be a bit longer to wrap around to see the actual responsive text wraping and scaling.</p>
+      <a href="#firstpage" data-role="button">Go to first page</a>
+      <div data-role="collapsible" data-content-theme="c">
+        <h3>Header</h3>
+        <p>Dummy collapsible content to show that it works</p>
+      </div>
+      <p>Another paragraph of text. Almost to less text to be a paragraph... well, not it should be enough, at least for a small paragraph.</p>
+    </div><!--/content-primary --> 
+  </div><!-- /content -->
+  
+  <div data-role="footer" class="footer-docs" data-theme="c" data-position="fixed">
+    <p>Template Footer</p>
+  </div>
+</div>
+<!-- /page --> 
+<!------------------------------------- PAGE #3 ------------------------------------>
+<div data-role="page" id="about" class="ui-corner-all">
+  <div data-role="header" data-theme="a">
+    <h1>About</h1>
+    <a id="togglemenu" data-icon="grid" data-iconpos="left">Menu</a>
+    <div class="content-secondary">
+      <ul data-role="listview" data-theme="c" data-dividertheme="d">
+        <li><a href="#firstpage">First Page</a></li>
+        <li><a href="#secondpage">Second Page</a></li>
+        <li data-theme="a">About</li>
+      </ul>
+    </div>
+  </div><!-- /header -->
+  
+  <div data-role="content">
+    <div class="content-primary">
+      <h2>About</h2>
+      <p>A responsive jQuery Mobile template. Two-column on tablet and single colum on phones.</p>
+      <h3>Features</h3>
+      <ul>
+        <li>vertical menu which slides to the left in tablet mode and slides up in phone mode</li>
+        <li>based on the jquery mobile docs implementation for a two-colum layout</li>
+        <li>hide menu after clicking a menu entry in single colum mode (can be removed in template.js)</li>
+        <li>almost no custom js is used for this template (just 10 lines of code for the menu toggle button)</li>
+        <li>uses <a href="http://jquerymobile.com/demos/1.2.0-alpha.1/" target="_blank">jQuery Mobile 1.2.0-alpha-1</a> (but also work with jqm 1.1.1)</li>
+      </ul>
+      <h3>Authors</h3>
+      <ul>
+      	<li>Christian Haintz [ christian &lt;dot&gt; haintz &lt;at&gt; orangelabs &lt;dot&gt; at ]</li>
+      </ul>
+      <h3>License MIT</h3>
+      <p>Copyright (C) 2012 Christian Haintz<br>
+        <br>
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br>
+        <br>
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br>
+        <br>
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+    </div><!--/content-primary --> 
+  </div><!-- /content -->
+  
+  <div data-role="footer" class="footer-docs" data-theme="c" data-position="fixed">
+    <p>Template Footer</p>
+  </div>
+</div><!-- /page -->
+
+</body>
+</html>

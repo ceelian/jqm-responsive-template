@@ -1,0 +1,4 @@
+.project
+*.DS_STORE
+*.log
+*.log.*
