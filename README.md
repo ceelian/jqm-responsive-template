@@ -16,7 +16,7 @@ Features
 Authors
 =======
 
-Christian Haintz [ christian <dot> haintz <at> orangelabs <dot> at ]
+Christian Haintz [ christian (dot) haintz (at) orangelabs (dot) at ]
 
 License MIT
 ===========
